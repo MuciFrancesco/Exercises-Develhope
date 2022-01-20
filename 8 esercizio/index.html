@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pelix registrazione</title>
+</head>
+<body>
+    <div class="explanation">
+        <h1>Registrati al nostro sito di Streaming</h1>
+        <p>Puoi scegliere tra diversi pacchetti , tra cui uno gratuito!</p>
+    </div>
+
+  <div class="information">
+      <label for="email">Email</label>
+      <input required type="email" id="email" name="email">
+      <label for="password">password</label>
+      <input minlength="8" required type="password" id="password" name="password">
+      <label for="nome">Nome</label>
+      <input required type="text" id="nome" name="nome">
+      <label  for="cognome">Cognome</label>
+      <input required type="text" id="cognome" name="cognome">
+      <label for="btd-date">Data di nascita</label>
+      <input required type="date" id="btd-date" name="btd-date">
+      <label for="num-cell">Numero di cellulare</label>
+      <input minlength="10" required type="text" id="num-cell" name="num-cell">
+  </div>
+  <div class="plane">
+      <label for="plane">Piano di abbonamento</label>
+      <select required name="plane__" id="plane__">
+          <optgroup>
+            <option value="basic" selected>
+                 - Piano free : 0 $ Servizi offerti : Straming video SD (Peer-to-peer)
+            </option>
+            <option value="medium">
+                 - Piano basic : 12.99 $ Servizi offerti : Straming video HD
+            </option>
+            <option value="pro">
+                  - Piano medium : 16.99 $ Servizi offerti : Straming video FULL HD
+            </option>
+          </optgroup>
+      </select>
+
+      <div class="plane-advance">
+          <label for="plane-advance">Con soli 3.99 $ potrai scegliere il piano Advance con video in 4K</label>
+          <input type="checkbox" name="plane-advance" id="plane-advance" value="plane-advance">
+      </div>
+  </div>
+  <div class="credit-card">
+      <h2>Per completare l'iscrizione inserisci i dati della tua carta di credito :</h2>
+      <label for="num-card">Numero di carta</label>
+      <input minlength="16" maxlength="16" required type="text" id="num-card" name="num-card">
+      <label for="cvc">CVC</label>
+      <input minlength="3" maxlength="3" required type="text" id="cvc" name="cvc">
+      <label for="expiry">Scadenza</label>
+      <input required type="date" id="expiry" name="expiry">
+      <label for="billing address">Indirizzo di fatturazione</label>
+      <input required type="text" id="billing address" name="billing address">
+  </div> 
+
+  <div class="btn">
+      <button type="submit">Registrati</button>
+  </div>
+
+</body>
+</html>
