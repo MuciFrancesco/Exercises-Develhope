@@ -1,0 +1,54 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'side-1 main-1 main-1 side-2'
+    'side-1 main-2 main-2 side-2'
+    
+    ;
+  }
+  
+  section {
+    padding: 2em;
+    margin: 1em;
+  }
+  
+  #green {
+    background-color: #8ffda7;
+    grid-area: header;
+  }
+  
+  #orange {
+    background-color: #ffc788;
+    grid-area: main-1;
+  }
+  
+  #yellow {
+    background-color: #ffff92;
+    grid-area: side-1;
+  }
+  
+  #red {
+    background-color: #ff919c;
+    grid-area: side-2;
+  }
+  
+  #blue {
+    background-color: #98d2ff;
+    grid-area: main-2;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    background-color: white;
+    padding: 1em;
+    display: block;
+    margin: 1em;
+  }
+  
