@@ -1,0 +1,80 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'main-1 main-1 main-2 main-2 aside aside'
+    'main-1 main-1 main-2 main-2 aside aside'
+    'main-3 main-3 main-3 main-3 aside aside'
+    ;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  
+  section {
+    padding: 2em;
+    margin: 1em;
+  }
+  
+  #green {
+    background-color: #8ffda7;
+    grid-area: header;
+  }
+  
+  #orange {
+    background-color: #ffc788;
+    grid-area: main-3;
+  }
+  
+  #yellow {
+    display: grid;
+    background-color: #ffff92;
+    grid-area: main-1;
+
+  }
+ #yellow ul{
+     display: grid;
+     grid-template-areas:
+     'uno uno due due'
+     'tre tre quattro quattro';
+
+ }
+
+  #yellow ul li:nth-child(1){grid-area: uno;}
+  #yellow ul li:nth-child(2){grid-area: due;}
+  #yellow ul li:nth-child(3){grid-area: tre;}
+  #yellow ul li:nth-child(4){grid-area: quattro;}
+
+  
+  #red {
+    display: grid;
+    background-color: #ff919c;
+    grid-area: main-2;
+  }
+  #red ul{
+    display: grid;
+    grid-template-areas:
+    'one one two two'
+    'tree tree four four';
+  }
+  #red ul li:nth-child(1){grid-area: one;}
+  #red ul li:nth-child(2){grid-area: two;}
+  #red ul li:nth-child(3){grid-area: tree;}
+  #red ul li:nth-child(4){grid-area: four;}
+  
+  #blue {
+    background-color: #98d2ff;
+    grid-area: aside;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  li {
+    background-color: white;
+    padding: 1em;
+    display: block;
+    margin: 1em;
+  }
+  

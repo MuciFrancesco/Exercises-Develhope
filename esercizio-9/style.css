@@ -1,0 +1,251 @@
+body{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+.sliders{
+    width: 500px;
+    height: auto;
+    border-radius: 17px;
+    background-color: #e6e6e6;
+}
+.slide{
+    border-radius: 50px;
+}
+.head{
+    display: flex;
+    background-color: rgb(177, 177, 177);
+    border-radius: 17px 17px 0px 0px;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.img-person{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+}
+.img-person img{
+width: 60px;
+height: 60px;
+border-radius: 50%;
+position: relative;
+left: 10px;
+top: 10px;
+}
+.person-info{
+
+}
+.person-info h5{
+margin: 2px;
+padding: 2PX;
+}
+.person-info p{
+margin: 2px;
+padding: 2px;
+color: white;
+}
+.svg-menu{
+    position: relative;
+    left: 16pc;
+}
+.svg-menu img{
+
+}
+.pictures{
+
+}
+.pictures img{
+    width: 500px;
+    height: 300px;
+}
+.svg-social{
+position: relative;
+top: 10px;
+left: 20px;
+}
+.svg-social img{
+padding: 6px;
+}
+.text{
+padding: 10px;
+}
+.text p{
+text-align: justify;
+font-size: 17px;
+}
+
+@media only screen and (max-width: 768px){
+    .card{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 200px;
+    }
+    .sliders{
+        margin: 15px;
+        width: 350px;
+        height: auto;
+        border-radius: 17px;
+        background-color: #e6e6e6;
+    }
+    .slide{
+        border-radius: 50px;
+    }
+    .head{
+        display: flex;
+        background-color: rgb(177, 177, 177);
+        border-radius: 17px 17px 0px 0px;
+        justify-content: flex-start;
+        align-items: center;
+    
+    }
+    .img-person{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    }
+    .img-person img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    }
+    .person-info{
+    
+    }
+    .person-info h5{
+    margin: 2px;
+    padding: 2PX;
+    }
+    .person-info p{
+    margin: 2px;
+    padding: 2px;
+    color: white;
+    }
+    .svg-menu{
+        position: relative;
+        left: 7pc;
+    }
+    .svg-menu img{
+    
+    }
+    .pictures{
+    
+    }
+    .pictures img{
+        width: 350px;
+        height: 300px;
+    }
+    .svg-social{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    }
+    .svg-social img{
+    padding: 6px;
+    }
+    .text{
+    padding: 10px;
+    }
+    .text p{
+    text-align: justify;
+    font-size: 17px;
+    }
+}
+@media only screen and (max-width: 375px){
+  
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 200px;
+        align-items: center;
+    }
+    .sliders{
+        width: 330px;
+        height: auto;
+        border-radius: 17px;
+        background-color: #e6e6e6;
+        margin-top: 50px;
+    }
+    .slide{
+        border-radius: 50px;
+    }
+    .head{
+        display: flex;
+        background-color: rgb(177, 177, 177);
+        border-radius: 17px 17px 0px 0px;
+        justify-content: flex-start;
+        align-items: center;
+    
+    }
+    .img-person{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    }
+    .img-person img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    }
+    .person-info{
+    
+    }
+    .person-info h5{
+    font-size: 14px;
+    margin: 2px;
+    padding: 2PX;
+    }
+    .person-info p{
+        font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    }
+    .svg-menu{
+        position: relative;
+        left: 101px;
+    }
+    .svg-menu img{
+    width: 25px;
+    height: 15px;
+    }
+    .pictures{
+    width: 100%;
+    height: 100%;
+    }
+    .pictures img{
+        width: 330px;
+        height: 200px;
+    }
+    .svg-social{
+    position: relative;
+    background-color: #b2b5b7;
+    top: 0px;
+    left: 0px;
+    }
+    .svg-social img{
+    padding: 6px;
+    width: 20px;
+    height: 20px;
+    }
+    .text{
+    padding: 15px;
+    }
+    .text p{
+    text-align: justify;
+    font-size: 14px;
+    }
+}
