@@ -1,0 +1,30 @@
+<html>
+  <body>
+    <div id="container">
+      <h2>Person's List</h2>
+      <table id="person-table">
+        <tbody></tbody>
+      </table>
+      <button id="add-row">Add row</button>
+    </div>
+  </body>
+</html>
+
+<script>
+  let btn = document.getElementById("add-row");
+  btn.addEventListener("click", addRow);
+  document.getElementById("person-table").style.width = "100%";
+
+  function addRow() {
+    let table = document.getElementById("person-table");
+    let row = table.insertRow(0);
+    let cell = row.insertCell(0);
+    let cell1 = row.insertCell(1);
+    let cell2 = row.insertCell(2);
+    row.style.width = "33%";
+    row.style.height = "20px";
+    cell.style.border = "1px solid black";
+    cell1.style.border = "1px solid black";
+    cell2.style.border = "1px solid black";
+  }
+</script>

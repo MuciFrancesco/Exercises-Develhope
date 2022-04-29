@@ -1,0 +1,79 @@
+<html>
+  <body>
+    <div id="container">
+      <h2>Person's Form</h2>
+      <form id="person-form">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  let btn = document.querySelector("button");
+  btn.style.position = "absolute";
+  btn.style.top = "210px";
+  let br = document.createElement("br");
+  let form = document.getElementById("person-form");
+
+  btn.addEventListener("click", submitPersonForm);
+
+  function submitPersonForm() {
+    let person = new Object();
+    person.firstName = document.getElementById("fname").value;
+    person.lastName = document.getElementById("lname").value;
+    person.age = document.getElementById("age").value;
+    event.preventDefault();
+    console.log(person);
+  }
+
+  function initForm() {
+    let firstNameLabel = document.createElement("label");
+    firstNameLabel.setAttribute("for", "fname");
+    firstNameLabel.setAttribute("value", "Firstname");
+    firstNameLabel.innerHTML = "Firstname :";
+
+    let firstNameInput = document.createElement("input");
+    firstNameInput.setAttribute("type", "text");
+    firstNameInput.setAttribute("name", "fname");
+    firstNameInput.setAttribute("id", "fname");
+
+    let lastNameLabel = document.createElement("label");
+    lastNameLabel.setAttribute("for", "lname");
+    firstNameLabel.setAttribute("value", "Lastname");
+    lastNameLabel.innerHTML = "Lastname :";
+
+    let lastNameInput = document.createElement("input");
+    lastNameInput.setAttribute("type", "text");
+    lastNameInput.setAttribute("name", "lname");
+    lastNameInput.setAttribute("id", "lname");
+
+    let ageLabel = document.createElement("label");
+    ageLabel.setAttribute("for", "age");
+    ageLabel.setAttribute("value", "Age");
+    ageLabel.innerHTML = "Age :";
+
+    let ageInput = document.createElement("input");
+    ageInput.setAttribute("type", "text");
+    ageInput.setAttribute("name", "age");
+    ageInput.setAttribute("id", "age");
+
+    form.appendChild(br.cloneNode());
+    form.appendChild(firstNameLabel);
+    form.appendChild(br.cloneNode());
+    form.appendChild(firstNameInput);
+    form.appendChild(br.cloneNode());
+
+    form.appendChild(lastNameLabel);
+    form.appendChild(br.cloneNode());
+    form.appendChild(lastNameInput);
+    form.appendChild(br.cloneNode());
+
+    form.appendChild(ageLabel);
+    form.appendChild(br.cloneNode());
+    form.appendChild(ageInput);
+    form.appendChild(br.cloneNode());
+  }
+
+  initForm();
+</script>
